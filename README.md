@@ -1,5 +1,7 @@
 # Simple app to notify me when Colter Thorofare Nets are back in stock
 
+[![Scrape website](https://github.com/jhrcook/colter/actions/workflows/actions.yaml/badge.svg)](https://github.com/jhrcook/colter/actions/workflows/actions.yaml)
+
 Originally planning to run on my Raspberry Pi, but after truoble with installation, I am pivoting to running from a GitHub Action.
 
 For local install:
