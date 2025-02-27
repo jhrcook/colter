@@ -22,9 +22,16 @@ jobs:
   # Run scrapper.
   scrape:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
       with:
-        python-version: '3.11'
-    - run: EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}" colter
+          python-version-file: ".python-version"
+          enable-cache: true
+
+    - name: Run scrapper
+      run: EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}" uv run colter

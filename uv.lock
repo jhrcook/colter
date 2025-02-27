@@ -121,7 +121,6 @@ dependencies = [
     { name = "requests" },
     { name = "rich" },
     { name = "typer" },
-    { name = "types-requests" },
     { name = "yagmail" },
 ]
 
@@ -130,6 +129,7 @@ dev = [
     { name = "mypy" },
     { name = "pre-commit" },
     { name = "ruff" },
+    { name = "types-requests" },
 ]
 
 [package.metadata]
@@ -142,7 +142,7 @@ requires-dist = [
     { name = "rich", specifier = ">=13.9.4" },
     { name = "ruff", marker = "extra == 'dev'" },
     { name = "typer", specifier = ">=0.15.1" },
-    { name = "types-requests", specifier = ">=2.32.0.20241016" },
+    { name = "types-requests", marker = "extra == 'dev'" },
     { name = "yagmail", specifier = ">=0.15.293" },
 ]
 provides-extras = ["dev"]
