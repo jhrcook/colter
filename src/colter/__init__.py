@@ -1,1 +1,3 @@
-"""Web-scrapping alert system for the Colter Backcountry trout net."""
+"""Web-scrapping alert system for the Colter Backcountry Thorofare Net."""
+
+from . import email, scraper
